@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{%block title%}图书馆{%endblock title%}
+{%block div%}
+    <a href="book/">图书馆</a>
+    <a href="try/1/2/">测试连接</a>
+    <h3>反向解析</h3>
+    <a href="{%url "nasp:na"%}">图书馆</a>
+{#    <a href="{%url 'nasp:n' 1 2%}">测试连接</a>#}
+    <h3>页面跳转</h3>
+    <a href="./try1/s?wd=www">页面跳转1参数s?wb=www</a>
+    <hr>
+    <br>
+    <a href="http://www.baidu.com/s?wd=www">页面跳转(百度搜索www)2参数s?wb=www</a>
+    <h3>重定向</h3>
+    <a href="/redirect/">重定向</a>
+    <br>
+    <hr>
+    <a href="/jpg/">测试图片</a>
+    <br>
+    <hr>
+    <a href="/jpg_shang/">测试上传图片</a>
+    <br>
+    <hr>
+    <a href="/zhuan_yi/">测试转义</a>
+
+{%endblock div%}
